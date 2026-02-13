@@ -1,0 +1,19 @@
+from user import User
+from card import Card
+igor = User("Igor")
+misha = User("Misha")
+alex = User("Alex")
+roma = User("Roma")
+vasya = User("Vasya")
+alex.sayName()
+alex.setAge (33)
+alex.sayAge()
+
+
+card = Card(
+    number="4568 9845 3217 6982", 
+    date="11/28", 
+    holder="Alex F"
+)
+alex.addCard (card)
+alex.getCard().pay (1000)
